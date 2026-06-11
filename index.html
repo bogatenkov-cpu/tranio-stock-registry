@@ -113,6 +113,8 @@
   /* VALUE blocks */
   .grid{display:grid;gap:18px}
   .g3{grid-template-columns:repeat(3,1fr)}
+  .g2{grid-template-columns:repeat(2,1fr)}
+  .sec-sub{margin-top:14px;font-size:16.5px;color:var(--muted);line-height:1.6}
   .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:.2s ease}
   .card:hover{border-color:var(--line-strong);transform:translateY(-3px);box-shadow:0 18px 40px -24px rgba(22,48,76,.4)}
   .card .emo{font-size:26px;line-height:1;margin-bottom:16px}
@@ -175,6 +177,7 @@
     .contact{grid-template-columns:1fr;gap:26px}
     .hero{padding:54px 0 44px}
     section.block{padding:48px 0}
+    .g2{grid-template-columns:1fr}
     .catalog-card{flex-direction:column;align-items:flex-start}
     .cta-row{flex-direction:column;align-items:stretch}
     .cta-row .btn{white-space:normal;justify-content:center;text-align:center}
@@ -282,39 +285,50 @@
     </div>
   </section>
 
+  <!-- PARTNERS -->
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="sec-label">Для партнёров</div>
+        <div class="sec-title">Tranio для партнёров: выгоды от сотрудничества</div>
+        <p class="sec-sub">Почему партнёры выбирают именно Tranio?</p>
+      </div>
+      <div class="grid g2">
+        <div class="card">
+          <h3>Не только брокер, но и девелопер</h3>
+          <ul>
+            <li>Возможность зайти до этапа котлована и получить высокую доходность</li>
+            <li>Уверенность в проектах по принципу Skin in the game</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Экспертиза в оценке проектов</h3>
+          <ul>
+            <li>Мы знаем, как устроен девелопмент изнутри, и понимаем, что действительно выгодно</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Собственный отдел транзакций</h3>
+          <ul>
+            <li>Обеспечим безопасные и удобные расчёты</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Решаем задачи клиентов комплексно</h3>
+          <ul>
+            <li>Инвестировать, управлять капиталом, устроить детей в школу, оформить документы</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ABOUT (collapsible) -->
   <section class="block">
     <div class="wrap">
       <div class="sec-head">
         <div class="sec-title">О Tranio и сотрудничестве</div>
       </div>
-
-      <details class="tg">
-        <summary>
-          <span>🔘 Tranio для партнёров: выгоды от сотрудничества</span>
-          <svg class="chev" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
-        </summary>
-        <div class="tg-body">
-          <div class="q">Почему партнёры выбирают именно Tranio?</div>
-          <h4>Не только брокер, но и девелопер</h4>
-          <ul>
-            <li>Возможность зайти до этапа котлована и получить высокую доходность</li>
-            <li>Уверенность в проектах по принципу Skin in the game</li>
-          </ul>
-          <h4>Экспертиза в оценке проектов</h4>
-          <ul>
-            <li>Мы знаем, как устроен девелопмент изнутри, и понимаем, что действительно выгодно</li>
-          </ul>
-          <h4>Собственный отдел транзакций</h4>
-          <ul>
-            <li>Обеспечим безопасные и удобные расчёты</li>
-          </ul>
-          <h4>Решаем задачи клиентов комплексно</h4>
-          <ul>
-            <li>Инвестировать, управлять капиталом, устроить детей в школу, оформить документы</li>
-          </ul>
-        </div>
-      </details>
 
       <details class="tg">
         <summary>
